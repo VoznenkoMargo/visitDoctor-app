@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/logo1.png" alt="mvm_logo">
+        </div>
+
+        <div class="header__button">
+            <button class="button__entry btn__header">Log out</button>
+            <button class="button__create-visit btn__header">Create visit</button>
+        </div>
+    </header>
+
+    <form>
+
+        <div class="wrapper search">
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search" placeholder="">
+        </div>
+
+        <div class="wrapper">
+            <label for="status">Status</label>
+            <select name="filter" id="status">
+                <option value="">All</option>
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+            </select>
+        </div>
+
+        <div class="wrapper">
+            <label for="priority">Urgency</label>
+            <select name="filter" id="priority">
+                <option value="">All</option>
+                <option value="High">High</option>
+                <option value="Normal">Normal</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+
+    </form>
+
+    <div class="container">
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/create.js"></script>
+</body>
+
+</html>

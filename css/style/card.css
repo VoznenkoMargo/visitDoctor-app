@@ -1,0 +1,177 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   justify-content: center;
+   ;
+   padding: 10px;
+   max-width: 1200px;
+   padding: 10px;
+   width: 100%;
+   align-items: start;
+   margin: 0 auto;
+
+}
+
+.doctor {
+   color: rgb(43, 174, 179);
+}
+
+.user {
+   align-self: center;
+   margin-bottom: 10px;
+}
+
+.fullname {
+   font-size: 20px;
+}
+
+.data {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+}
+
+.fullname,
+.doctor {
+   margin-bottom: 10px;
+   width: 100%;
+   word-break: normal;
+}
+
+.status {
+   margin-bottom: 20px;
+}
+
+.medcard {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-content: center;
+   text-align: center;
+   width: 30%;
+   /* max-height: 400px; */
+   padding: 50px 25px 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   position: relative;
+}
+
+.male,
+.female {
+   display: block;
+}
+
+.btn {
+   align-self: center;
+   margin-bottom: 10px;
+   padding: 10px 15px;
+   color: white;
+   font-weight: 700;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   width: 70%;
+}
+
+.edit__btn {
+   background-color: rgb(43, 174, 179);
+   margin-bottom: 10px;
+   border: 2px solid rgb(43, 174, 179);
+   margin-top: 10px;
+}
+
+.edit__btn:hover {
+   background-color: rgb(79, 133, 158);
+
+}
+
+.show__btn {
+   color: rgb(66, 165, 132);
+
+}
+
+.show__btn:hover {
+   color: white;
+   background-color: rgb(52, 112, 92);
+
+}
+
+.delete__btn {
+   background: url("../../img/close.png") no-repeat center / contain;
+   display: block;
+   height: 20px;
+   width: 20px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+
+   cursor: pointer;
+
+}
+
+.text {
+   font-size: 14px;
+   text-align: left;
+}
+
+.text span {
+   font-weight: 700;
+   font-size: 12px;
+
+
+}
+
+@media screen and (max-width:768px) {
+
+   .medcard {
+      width: 50%;
+      padding-top: 40px;
+   }
+
+   .btn {
+      width: 100%;
+   }
+
+   .delete__btn {
+      width: 20px;
+      height: 20px;
+   }
+}
+
+@media screen and (max-width:480px) {
+
+   .medcard {
+      width: 90%;
+   }
+
+   .btn {
+      width: 100%;
+   }
+}
+
+.hideInfo {
+   opacity: 0;
+   height: 0;
+   overflow: hidden;
+   transition: all 1s ease-in;
+   -webkit-transition: all 1s ease-in;
+   -moz-transition: all 1s ease-in;
+   -ms-transition: all 1s ease-in;
+   -o-transition: all 1s ease-in;
+}
+
+.showInfo {
+   height: auto;
+   opacity: 1;
+   overflow: visible;
+
+}
